@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .border-animation {
+            padding: "4px";
+            border-radius: "4px";
+            
+        }
+        .border-animation:hover {
+            animation: CardBorderAnimation 5s forwards ease-in-out;
+            background-size: 99% 5px, 5px 99%, 99% 5px, 5px 99%;
+            background: linear-gradient(to right, #7CD74B 99.99%, transparent), linear-gradient(to bottom, #7CD74B 99.99%,transparent), linear-gradient(to right, #7CD74B 99.99%, transparent), linear-gradient(to bottom, #7CD74B 99.99%, transparent);
+            background-repeat: no-repeat;
+            background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            border: none;
+        }
+        button {
+            text-decoration: none;
+            background: transparent;
+            border: 5px solid aquamarine;
+            height: 100px;
+            width: 150px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        button:hover {
+            border: none;
+        }
+        @keyframes CardBorderAnimation {
+            0% {
+                background: linear-gradient(to right, #7CD74B 99.99%, transparent), linear-gradient(to bottom, #7CD74B 99.99%, transparent), linear-gradient(to right, #7CD74B 99.99%, transparent), linear-gradient(to bottom, #7CD74B 99.99%, transparent);
+                background-repeat: no-repeat;
+                background-size: 99% 5px, 5px 99%, 99% 5px, 5px 99%;
+                background-position: 0 0, 100% 0, 100% 100%, 0 100%
+            }
+
+            25% {
+                background: linear-gradient(to right, #7CD74B 99.99%, transparent), linear-gradient(to bottom, #7CD74B 99.99%, transparent), linear-gradient(to right, #7CD74B 99.99%, transparent), linear-gradient(to bottom, #7CD74B 99.99%, transparent);
+                background-repeat: no-repeat;
+                background-size: 99% 5px, 5px 99%, 99% 5px, 5px 0;
+                background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            }
+
+            50% {
+                background: linear-gradient(to right, #FF9030 99.99%, transparent), linear-gradient(to bottom, #FF9030 99.99%, transparent), linear-gradient(to right, #FF9030 99.99%, transparent), linear-gradient(to bottom, #FF9030 99.99%, transparent);
+                background-repeat: no-repeat;
+                background-size: 99% 5px, 5px 99%, 0 5px, 5px 0;
+                background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            }
+
+            75% {
+                background: linear-gradient(to right, #FF625C 99.99%, transparent), linear-gradient(to bottom, #FF625C 99.99%, transparent), linear-gradient(to right, #FF625C 99.99%, transparent), linear-gradient(to bottom, #FF625C 99.99%, transparent);
+                background-repeat: no-repeat;
+                background-size: 99% 5px, 5px 0, 0 5px, 5px 0;
+                background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            }
+
+            100% {
+                background: linear-gradient(to right, #FF625C 99.99%, transparent), linear-gradient(to bottom, #FF625C 99.99%, transparent), linear-gradient(to right, #FF625C 99.99%, transparent), linear-gradient(to bottom, #FF625C 99.99%, transparent);
+                background-repeat: no-repeat;
+                background-size: 0 5px, 5px 0, 0 5px, 5px 0;
+                background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border-animation">
+        <button> Hover Me </button>
+    </div>
+</body>
+
+</html>

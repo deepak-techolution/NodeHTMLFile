@@ -1,0 +1,19 @@
+{
+  "name": "html-file-rendering",
+  "version": "1.0.0",
+  "description": "Rendering HTML file with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepak-techolution/NodeHTMLFile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepak-techolution/NodeHTMLFile/issues"
+  },
+  "homepage": "https://github.com/deepak-techolution/NodeHTMLFile#readme"
+}
